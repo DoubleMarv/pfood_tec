@@ -1,0 +1,765 @@
+html, body {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.containo {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+}
+.containo h1, .containo h2, .containo h3, .containo h4, .containo h5, .containo p, .containo li {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+}
+
+.flexo {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .flexo {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 991px) {
+  .flexo {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .flex-half {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .flex-half {
+    width: 100%;
+    padding: 3rem 1.5rem;
+  }
+}
+.flex-half h1 {
+  font-weight: 600;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexo-align-center-vertically {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+.fullwidth_grey {
+  background-color: #F5F7F7;
+  position: relative;
+}
+.fullwidth_grey:before {
+  content: "";
+  position: absolute;
+  background-color: #F5F7F7;
+  left: -999px;
+  width: 999px;
+  top: 0;
+  height: 100%;
+  display: block;
+}
+.fullwidth_grey:after {
+  content: "";
+  position: absolute;
+  background-color: #F5F7F7;
+  right: -999px;
+  width: 999px;
+  top: 0;
+  height: 100%;
+  display: block;
+}
+
+.fullwidth_blue {
+  background-color: #0071ce;
+  position: relative;
+}
+.fullwidth_blue:before {
+  content: "";
+  position: absolute;
+  background-color: #0071ce;
+  left: -999px;
+  width: 999px;
+  top: 0;
+  height: 100%;
+  display: block;
+}
+.fullwidth_blue:after {
+  content: "";
+  position: absolute;
+  background-color: #0071ce;
+  right: -999px;
+  width: 999px;
+  top: 0;
+  height: 100%;
+  display: block;
+}
+
+/********************/
+/*** coloured_title *****/
+/********************/
+.coloured_title h1, .coloured_title h2, .coloured_title h3, .coloured_title h4, .coloured_title h5, .coloured_title p {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+@media screen and (max-width: 991px) {
+  .coloured_title {
+    padding: 0 1rem;
+  }
+}
+.coloured_title h2 {
+  color: #001E61;
+  font-size: calc(2rem + 0.1vw);
+  line-height: 1.15em;
+  font-weight: 600;
+}
+.coloured_title h2 span {
+  color: #fce200;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+@media screen and (min-width: 992px) {
+  .section_a {
+    min-height: 50vh;
+    padding-bottom: 7rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_a {
+    min-height: 70vh;
+    padding-bottom: 6rem;
+  }
+}
+.section_a h1 {
+  color: #001E61;
+  font-size: calc(3.5rem + 0.1vw);
+  line-height: 1.05em;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.section_a .big_blue {
+  color: #0071CE;
+  font-size: calc(1.05rem + 0.1vw);
+  max-width: 25rem;
+  margin-bottom: 2rem;
+}
+.section_a .holds_banner_buttons {
+  display: flex;
+  flex-direction: column;
+}
+.section_a .banner_button {
+  padding: 1rem 1.5rem;
+  border: 1px solid #0071CE;
+  border-radius: 0.35rem;
+  margin-bottom: 1.15rem;
+  max-width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.section_a .banner_button span.texto {
+  color: #001E61;
+  line-height: 1em;
+  margin-right: 1.5rem;
+  font-weight: 600;
+}
+.section_a .banner_button span.arrow {
+  transform: translate(0px, 2px);
+}
+.section_a .banner_button span.arrow svg {
+  fill: #fce200;
+}
+.section_a .banner_button:hover {
+  background: #001e61;
+}
+.section_a .banner_button:hover span.texto {
+  color: #fce200;
+}
+.section_a .banner_button:hover span.arrow {
+  transform: translate(5px, 2px);
+}
+.section_a .banner_button:hover span.arrow svg {
+  fill: #fce200;
+}
+
+.circle_image {
+  background-image: url("https://i.ibb.co/PYby8Nk/cheese-wheel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1rem solid #fff;
+}
+@media screen and (min-width: 992px) {
+  .circle_image {
+    height: 30vw;
+    width: 30vw;
+    max-width: 35rem;
+    max-height: 35rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .circle_image {
+    height: 60vw;
+    width: 60vw;
+    max-width: 35rem;
+    max-height: 35rem;
+  }
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+.section_b {
+  padding: 3rem 0;
+}
+
+.section_c {
+  padding: 3rem 0;
+}
+
+.herozone {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 991px) {
+  .herozone {
+    padding: 0 1rem;
+  }
+}
+.herozone img {
+  opacity: 0;
+}
+@media screen and (min-width: 992px) {
+  .herozone img {
+    max-height: 45rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .herozone img {
+    max-height: 90vw;
+  }
+}
+
+.holds_hero_zone {
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .holds_hero_zone {
+    padding-bottom: 17rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .holds_hero_zone {
+    padding-bottom: 15rem;
+  }
+}
+.holds_hero_zone ol {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 3rem;
+}
+.holds_hero_zone ol li {
+  line-height: 1.8em;
+  color: #001e61;
+  font-size: calc(1.3rem + 0.1vw);
+  font-weight: 600;
+}
+@media screen and (min-width: 992px) {
+  .holds_hero_zone.zone_b ol {
+    right: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .holds_hero_zone.zone_b ol {
+    left: 0;
+  }
+}
+
+p.biggerpee, h2.biggerpee {
+  font-weight: 600;
+  font-size: calc(1.15rem + 0.1vw);
+  color: #001e61;
+}
+
+h3.nota_hach {
+  font-weight: 400;
+  font-size: calc(1.05rem + 0.1vw);
+  color: #001e61;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+@media screen and (max-width: 991px) {
+  .accordion_zone {
+    padding: 0 1rem;
+  }
+}
+.accordion_zone .is_an_accordion_item_a, .accordion_zone .is_an_accordion_item_b {
+  padding: 2rem 0;
+  border-top: 1px solid #0071ce;
+}
+.accordion_zone .is_an_accordion_item_a .accordion_title, .accordion_zone .is_an_accordion_item_b .accordion_title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.accordion_zone .is_an_accordion_item_a .accordion_title .plusso, .accordion_zone .is_an_accordion_item_b .accordion_title .plusso {
+  position: relative;
+  color: #001e61;
+  height: 4rem;
+  width: 4rem;
+}
+.accordion_zone .is_an_accordion_item_a .accordion_title .plusso:after, .accordion_zone .is_an_accordion_item_b .accordion_title .plusso:after {
+  content: "+";
+  color: #001e61;
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+  position: absolute;
+  line-height: 1em;
+  left: 33%;
+  top: 0;
+  z-index: 5;
+}
+.accordion_zone .is_an_accordion_item_a p.accord_main_title, .accordion_zone .is_an_accordion_item_b p.accord_main_title {
+  color: #001e61;
+  font-weight: 600;
+  font-size: calc(1.8rem + 0.1vw);
+  margin: 0;
+  line-height: 1em;
+}
+.accordion_zone .is_an_accordion_item_a p.accord_main_title span, .accordion_zone .is_an_accordion_item_b p.accord_main_title span {
+  font-weight: 400;
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo, .accordion_zone .is_an_accordion_item_b .inneraccordo {
+  display: none;
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo .accord_inner_title, .accordion_zone .is_an_accordion_item_b .inneraccordo .accord_inner_title {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: calc(1.15rem + 0.1vw);
+  color: #001e61;
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 991px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .left_side, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .left_side {
+    width: calc(60% - 1rem);
+  }
+}
+@media screen and (max-width: 991px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .left_side, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .left_side {
+    width: calc(100% - 1rem);
+  }
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .left_side img, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .left_side img {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .right_side, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .right_side {
+    width: calc(40% - 1rem);
+  }
+}
+@media screen and (max-width: 991px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .right_side, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .right_side {
+    width: calc(100% - 1rem);
+  }
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .right_side .textcontainer, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .right_side .textcontainer {
+  color: #001e61;
+  font-size: calc(0.9rem + 0.1vw);
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .right_side .textcontainer, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .right_side .textcontainer {
+    margin-top: 2rem;
+  }
+}
+.accordion_zone .is_an_accordion_item_a .inneraccordo .flexhammer .right_side .download_link, .accordion_zone .is_an_accordion_item_b .inneraccordo .flexhammer .right_side .download_link {
+  background: #0071ce;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+.accordion_zone .is_an_accordion_item_a.activized p.accord_main_title,
+.accordion_zone .is_an_accordion_item_b.activized p.accord_main_title {
+  color: #0071ce;
+}
+.accordion_zone .is_an_accordion_item_a.activized .accordion_title,
+.accordion_zone .is_an_accordion_item_b.activized .accordion_title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.accordion_zone .is_an_accordion_item_a.activized .accordion_title .plusso,
+.accordion_zone .is_an_accordion_item_b.activized .accordion_title .plusso {
+  position: relative;
+  color: #001e61;
+  height: 4rem;
+  width: 4rem;
+}
+.accordion_zone .is_an_accordion_item_a.activized .accordion_title .plusso:after,
+.accordion_zone .is_an_accordion_item_b.activized .accordion_title .plusso:after {
+  content: "-";
+  color: #fce200;
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+  position: absolute;
+  line-height: 1em;
+  left: 33%;
+  top: 0;
+  z-index: 99;
+}
+.accordion_zone .is_an_accordion_item_a.activized .inneraccordo,
+.accordion_zone .is_an_accordion_item_b.activized .inneraccordo {
+  display: block;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+.section_d {
+  padding: 3rem 0;
+  color: #fff;
+}
+.section_d .titlezone h3 {
+  font-size: calc(2.15rem + 0.1vw);
+  font-weight: 600;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .section_d .titlezone h3 {
+    max-width: 40rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_d .titlezone h3 {
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}
+.section_d .hold_threeboxes {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .section_d .hold_threeboxes {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_d .hold_threeboxes {
+    flex-direction: column;
+  }
+}
+.section_d .hold_threeboxes .threebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .section_d .hold_threeboxes .threebox {
+    width: calc(30% - 1rem);
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_d .hold_threeboxes .threebox {
+    width: calc(100% - 1rem);
+  }
+}
+.section_d .hold_threeboxes .threebox h4 {
+  color: #fce200;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .section_d .hold_threeboxes .threebox h4 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_d .hold_threeboxes .threebox h4 {
+    text-align: center;
+  }
+}
+.section_d .hold_threeboxes .threebox .after_border {
+  position: absolute;
+  border-top: 2px dashed #fce200;
+  left: 100%;
+  top: 5rem;
+  width: 7rem;
+}
+@media screen and (max-width: 991px) {
+  .section_d .hold_threeboxes .threebox .after_border {
+    display: none;
+  }
+}
+.section_d .hold_threeboxes .threebox .after_border:before {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  background: #fce200;
+  position: absolute;
+  left: 0;
+  display: block;
+  border-radius: 50%;
+  top: -0.4rem;
+}
+.section_d .hold_threeboxes .threebox .after_border:after {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  background: #fce200;
+  position: absolute;
+  right: 0;
+  display: block;
+  border-radius: 50%;
+  top: -0.4rem;
+}
+.section_d .hold_threeboxes .threebox .threebox_image {
+  display: flex;
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  align-items: center;
+  border: 10px solid #84bbe7;
+  position: relative;
+}
+.section_d .hold_threeboxes .threebox .threebox_image figure {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section_d .hold_threeboxes .threebox .textzone {
+  font-weight: 300;
+  max-width: 30rem;
+  font-size: 0.95rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/********************/
+/*** section e / form *****/
+/********************/
+.section_e {
+  padding: 4rem 0;
+}
+@media screen and (max-width: 991px) {
+  .section_e .titlezone {
+    text-align: center;
+  }
+}
+.section_e .titlezone h3 {
+  font-size: calc(2.15rem + 0.1vw);
+  font-weight: 600;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .section_e .titlezone {
+    text-align: center;
+  }
+}
+.section_e .formzone {
+  background: #001e61;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .section_e .formzone {
+    flex-direction: row;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_e .formzone {
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0rem;
+  }
+}
+.section_e .formzone .leftside {
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .section_e .formzone .leftside {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_e .formzone .leftside {
+    width: 100%;
+  }
+}
+.section_e .formzone .leftside .person_area {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.section_e .formzone .leftside .person_area .image_side {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  align-items: center;
+  border: 10px solid #84bbe7;
+  position: relative;
+}
+.section_e .formzone .leftside .person_area .image_side figure {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.section_e .formzone .leftside .person_area .person_details {
+  padding-left: 1.5rem;
+}
+.section_e .formzone .leftside .person_area .person_details h4, .section_e .formzone .leftside .person_area .person_details p {
+  line-height: 1em;
+  color: #fff;
+}
+.section_e .formzone .leftside .person_area .person_details a {
+  text-decoration: none;
+  color: inherit;
+}
+.section_e .formzone .leftside .person_area .person_details h4.person_name {
+  margin: 0;
+  color: #0071ce !important;
+}
+.section_e .formzone .leftside .person_area .person_details p.person_title {
+  text-transform: uppercase;
+  color: #fff;
+}
+.section_e .formzone .leftside .person_area .person_details p.person_phone, .section_e .formzone .leftside .person_area .person_details p.person_email {
+  font-weight: 200;
+  color: #fff;
+}
+.section_e .formzone .leftside .person_area .person_details p.person_phone span, .section_e .formzone .leftside .person_area .person_details p.person_email span {
+  font-weight: 600;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .section_e .formzone .form_area {
+    width: calc(30% - 3rem);
+    border-left: 1px solid #433f6d;
+    padding-left: 3rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_e .formzone .form_area {
+    width: calc(100% - 3rem);
+  }
+}
+.section_e .formzone .form_area h4 {
+  text-align: center;
+  color: #fff;
+  font-size: calc(1.6rem + 0.1vw);
+}
+@media screen and (max-width: 991px) {
+  .section_e .formzone .form_area .form {
+    text-align: center;
+  }
+}
+.section_e .formzone .form_area .form .get_in_touch_butt {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #0071ce;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 0.75rem 2rem;
+  min-width: 10rem;
+  display: inline-block;
+}
+.section_e .formzone .form_area .holds_form_inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section_e .formzone .form_area .holds_form_inputs .half_form, .section_e .formzone .form_area .holds_form_inputs .full_form {
+  margin-bottom: 0.5rem;
+}
+.section_e .formzone .form_area .holds_form_inputs .half_form input, .section_e .formzone .form_area .holds_form_inputs .half_form textarea, .section_e .formzone .form_area .holds_form_inputs .full_form input, .section_e .formzone .form_area .holds_form_inputs .full_form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  max-width: calc(100% - 1.5rem);
+}
+.section_e .formzone .form_area .holds_form_inputs .half_form input ::placeholder, .section_e .formzone .form_area .holds_form_inputs .half_form textarea ::placeholder, .section_e .formzone .form_area .holds_form_inputs .full_form input ::placeholder, .section_e .formzone .form_area .holds_form_inputs .full_form textarea ::placeholder {
+  color: #001e61;
+}
+.section_e .formzone .form_area .holds_form_inputs .half_form textarea, .section_e .formzone .form_area .holds_form_inputs .full_form textarea {
+  min-height: 5rem;
+}
+.section_e .formzone .form_area .holds_form_inputs .half_form {
+  width: calc(50% - 1rem);
+}
+.section_e .formzone .form_area .holds_form_inputs .full_form {
+  width: 100%;
+}
+.section_e .formzone .form_area .holds_form_inputs .full_form.subbo {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.section_e .formzone .form_area .holds_form_inputs .full_form.subbo #formsubmitto {
+  background-color: #0071ce;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 0.75rem 2rem;
+  min-width: 10rem;
+}
+.section_e .formzone .form_area .holds_form_inputs ::placeholder {
+  color: #001e61;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: calc(0.8rem + 0.1vw);
+}
